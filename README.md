@@ -1,12 +1,12 @@
 ## Getting Started
 ```bash
-ssh-keygen -t ed25519 -C "harx-dev@example.com" -f ~/.ssh/id_ed25519_harx-dev
+ssh-keygen -t ed25519 -C "user@gmail.com" -f ~/.ssh/id_ed25519_first_github
 ```
 
 ## Add SSH Keys to SSH Agent
 ```bash
 eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/id_ed25519_harshathkulal
+ssh-add ~/.ssh/id_ed25519_first_github
 ```
 
 ## Create an SSH Config File
@@ -32,15 +32,15 @@ Host github-second
 
 ## Configure Git User for Each Repository
 ```bash
-cd /path/to/your/harx-dev-repo
-git config user.name "harx-dev"
-git config user.email "harx-dev@example.com"
+cd /path/to/your/user-repo
+git config user.name "Username"
+git config user.email "user@gmail.com"
 ```
 
 ## Update Remote URLs
 ```bash
 cd /path/to/your/harx-dev-repo
-git remote set-url origin git@github-harx:harx-dev/your-repo.git
+git remote set-url origin git@github-user:-Username/your-repo.git
 ```
 
 ## Verify Account in Use
@@ -53,5 +53,5 @@ git config user.email
 
 ## Verify SSH Key
 ```bash
-ssh -T git@github-harx
+ssh -T git@github-Username
 ```
